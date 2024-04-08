@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrooveStation_2024", "GrooveStation_2024\GrooveStation_2024.csproj", "{A295FAC1-A130-44FD-A3B9-6F57B7A76FAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PROTOTYPE_GrooveStation", "PROTOTYPE_GrooveStation\PROTOTYPE_GrooveStation.csproj", "{1E1086DA-4495-454A-8365-857E34602A5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A295FAC1-A130-44FD-A3B9-6F57B7A76FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A295FAC1-A130-44FD-A3B9-6F57B7A76FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A295FAC1-A130-44FD-A3B9-6F57B7A76FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A295FAC1-A130-44FD-A3B9-6F57B7A76FAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E1086DA-4495-454A-8365-857E34602A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E1086DA-4495-454A-8365-857E34602A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E1086DA-4495-454A-8365-857E34602A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E1086DA-4495-454A-8365-857E34602A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A20C1E03-6B4C-4923-B8A0-F7E273DA5CDE}
+	EndGlobalSection
+EndGlobal
