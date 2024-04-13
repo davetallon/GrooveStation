@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrooveStation_PROTOTYPE", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrooveStation", "GrooveStation\GrooveStation.csproj", "{763F809E-8C82-46F0-A621-D017A8D5B92D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrooveStation_HARDWARE", "GrooveStation_HARDWARE\GrooveStation_HARDWARE.csproj", "{1A749642-BE58-49E9-BB60-21F584ED551D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{763F809E-8C82-46F0-A621-D017A8D5B92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{763F809E-8C82-46F0-A621-D017A8D5B92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{763F809E-8C82-46F0-A621-D017A8D5B92D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A749642-BE58-49E9-BB60-21F584ED551D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A749642-BE58-49E9-BB60-21F584ED551D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A749642-BE58-49E9-BB60-21F584ED551D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A749642-BE58-49E9-BB60-21F584ED551D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

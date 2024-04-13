@@ -1,16 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
-using WMPLib;
 
 namespace GrooveStation_HARDWARE
 {
@@ -27,7 +21,7 @@ namespace GrooveStation_HARDWARE
         }
 
         //FIELDS
-        List<Track> playlist = new List<Track>();
+        public List<Track> playlist = new List<Track>();
         private bool isTestMode = false;
         private static Random rng = new Random();
         private string selectedSong;
@@ -39,7 +33,7 @@ namespace GrooveStation_HARDWARE
 
 
         //METHODS
-        private void btn_Browse_Click(object sender, EventArgs e)
+        public void btn_Browse_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog open = new OpenFileDialog())
             {
@@ -80,23 +74,18 @@ namespace GrooveStation_HARDWARE
 
         private void btn_Transfer_Click(object sender, EventArgs e)
         {
-            //Only proceed if the listbox has items inside.
-            if (lb_FilePath.SelectedIndex != -1)
+            // Only proceed if the listbox has items inside.
+            if (lb_FilePath.Items.Count > 0 && lb_FilePath.SelectedIndex != -1)
             {
-                string filePath = lb_FilePath.SelectedValue.ToString();
-                if (string.IsNullOrEmpty(filePath))
-                {
-                    MessageBox.Show("Please select an audio file to transfer.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
                 if (isTestMode)
                 {
                     MessageBox.Show("Test mode is enabled. Transfer-simulation of Audio file(s) complete.", "Test Mode", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
 
+                // Retrieve external device.
                 string usbDrivePath = FindUSBDrive();
+
                 if (usbDrivePath == null)
                 {
                     MessageBox.Show("No USB drive detected. Please connect your portable device.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -105,20 +94,29 @@ namespace GrooveStation_HARDWARE
 
                 try
                 {
-                    string fileName = Path.GetFileName(filePath);
-                    string destinationPath = Path.Combine(usbDrivePath, fileName);
+                    // Create a directory on the USB drive to store the playlist
+                    string playlistDirectory = Path.Combine(usbDrivePath, "Playlist");
+                    Directory.CreateDirectory(playlistDirectory);
 
-                    File.Copy(filePath, destinationPath, true);
-                    MessageBox.Show("Audio file transferred successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    // Copy each track in the playlist to the USB drive
+                    foreach (Track track in playlist)
+                    {
+                        string fileName = Path.GetFileName(track.TrackAddress);
+                        string destinationPath = Path.Combine(playlistDirectory, fileName);
+
+                        File.Copy(track.TrackAddress, destinationPath, true);
+                    }
+
+                    MessageBox.Show("Playlist transferred successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error transferring audio file: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error transferring playlist: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        private string FindUSBDrive()
+        public string FindUSBDrive()
         {
             DriveInfo[] drives = DriveInfo.GetDrives();
             foreach (DriveInfo drive in drives)
@@ -137,7 +135,7 @@ namespace GrooveStation_HARDWARE
             ResetTimer(sender, e);
         }
 
-        private void btn_Shuffle_Click(object sender, EventArgs e)
+        public void btn_Shuffle_Click(object sender, EventArgs e)
         {
             var shuffledcards = playlist.OrderBy(_ => rng.Next()).ToList();
             lb_FilePath.DataSource = shuffledcards;
@@ -248,4 +246,6 @@ namespace GrooveStation_HARDWARE
             timer1_Tick(sender, e);
         }
     }
+
+
 }

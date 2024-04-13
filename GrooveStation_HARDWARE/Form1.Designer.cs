@@ -234,7 +234,6 @@
 
         private System.Windows.Forms.Button btn_Browse;
         private System.Windows.Forms.Button btn_Transfer;
-        private System.Windows.Forms.ListBox lb_FilePath;
         private System.Windows.Forms.Button btn_Test;
         private System.Windows.Forms.Button btn_Shuffle;
         private System.Windows.Forms.Button btn_Clear;
@@ -247,6 +246,7 @@
         private AxWMPLib.AxWindowsMediaPlayer Player;
         private System.Windows.Forms.Label label_idleIndicator;
         private System.Windows.Forms.Label label_quit;
+        public System.Windows.Forms.ListBox lb_FilePath;
     }
 }
 

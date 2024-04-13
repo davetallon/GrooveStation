@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="GrooveStation_HARDWARE.exe" version="1.0.0.0" publicKeyToken="80ab52ca0357d72b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="GrooveStation_HARDWARE" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="GrooveStation_HARDWARE.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>AP/b93EwXtXAlHW4e+y3qXMYSPJcpZFQZRjdBjS1Srg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GrooveStation_HARDWARE.exe" size="21472">
+      <assemblyIdentity name="GrooveStation_HARDWARE" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>CqKOZn8pOBy7rLampXD094cs3MrffSVL6Kl1ojZEulg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>QjTiVcHTvLa9NwI0hUqYlkwkGxsFzi4FuWYVN9EaiFA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nunit.framework.dll" size="475136">
+      <assemblyIdentity name="nunit.framework" version="4.0.1.0" publicKeyToken="2638CD05610744EB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>u76gSn87WQnKGWu2g1bxzfvValTmVx/Zk7Ejr3v06LE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nunit.framework.legacy.dll" size="62464">
+      <assemblyIdentity name="nunit.framework.legacy" version="4.0.1.0" publicKeyToken="2638CD05610744EB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ywjXzvXmP5gH8JZzIBb1frLdViOdFKeRAtYrQ26RHvs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Runtime.CompilerServices.Unsafe.dll" size="16768">
+      <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" version="4.0.4.1" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZkCfZwMVr+hhDxek06HuUtcrakbFRM7JdUToOF+QrXQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Threading.Tasks.Extensions.dll" size="25984">
+      <assemblyIdentity name="System.Threading.Tasks.Extensions" version="4.2.0.1" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>T4H/0NxyBNt1r8NepCkXabB8RAWS8oiUJg7qdmJqI8Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="GrooveStation_HARDWARE.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+CM46OnHRrXZXNLMx7+U3V3iubiYL//d8hGOR13lDhU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-CS88MSC\David" issuerKeyHash="1ab39ee2246b485134b1957093ba76d9a45e4a59" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SdAcp3f+rkXtKHDAyw9b8k6ft2GtLpfd/JNOjYoRjbs=</DigestValue></Reference></SignedInfo><SignatureValue>MXSVrcSxTcDTGaGYc5e/Akf8HQgr/xUvDSxNKsY7LVOEPKtyCqI0sySDKhMxnk0HjwoIp74Ibpxrn3xnbPPnb5HFVjGDPilxGLIKw6gcvtq7ZKjt7Htxp/H9mBMIfl71HqtGEieEtc8jf/kW+iYmBt59W7Big17WfubmDM9EWBM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rWNAvfxWVEWFmsrrtoAYvZq63fe99mFjooGWudfFVTL/JIku0CBPhwVzinxq+S83KxQAaMDkDRJwlPD7pwn2w2KT2UG4Bf4P/cgzlQk/X6R9DEAJzWjo+3IRXq0vwxdvQaKbLwUIPkTKhMNwApUcwQs4gdCGAIiBELKsoLM4EC0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bb8d118a8d4e93fcdd972ead61b79f4ef25b0fcbc07028ed45aefe77a71cd049" Description="" Url=""><as:assemblyIdentity name="GrooveStation_HARDWARE.exe" version="1.0.0.0" publicKeyToken="80ab52ca0357d72b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-CS88MSC\David</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fmTos3f1hfguntkwbI2YEppDSKhGTSjl7mldyID59zo=</DigestValue></Reference></SignedInfo><SignatureValue>IIf9EwW2/otrm59X+VQZlmSNslSmKLKXj2BFCJqwIUO5T2Mqh3AtsKdjbFHkgHxrF8RORVwsFxp7SDF+3g62qO2RGAmFLaCTUJf6t/zT6DlZ65NKgSuLkR0nBdaDG9WvHRBKIrtbo7JfAzRJXYhI9Hw2l0spjoca3obj9+vLl6M=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rWNAvfxWVEWFmsrrtoAYvZq63fe99mFjooGWudfFVTL/JIku0CBPhwVzinxq+S83KxQAaMDkDRJwlPD7pwn2w2KT2UG4Bf4P/cgzlQk/X6R9DEAJzWjo+3IRXq0vwxdvQaKbLwUIPkTKhMNwApUcwQs4gdCGAIiBELKsoLM4EC0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQS9qxSmHAZ4NCcY+R+hFD2jANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEMAUwA4ADgATQBTAEMAXABEAGEAdgBpAGQwHhcNMjQwNDExMTEzNjQwWhcNMjUwNDExMTczNjQwWjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEMAUwA4ADgATQBTAEMAXABEAGEAdgBpAGQwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAK1jQL38VlRFhZrK67aAGL2aut33vfZhY6KBlrnXxVUy/ySJLtAgT4cFc4p8avkvNysUAGjA5A0ScJTw+6cJ9sNik9lBuAX+D/3IM5UJP1+kfQxACc1o6PtyEV6tL8MXb0Gimy8FCD5EyoTDcAKVHMELOIHQhgCIgRCyrKCzOBAtAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAVB1G2VAZsRClaL0mrYWCs31mZ/X3FsEoJHlRP0uXqoI2EglaJYuF1JeEx2cvQuf5xcjDfc+odnl2+qsRUJDp4Vf2EXCxA1KYyOqwzn12yxbQZ+UlGnNP09gfd5QccVCUpv51g0thMcfu3DTtInuiF+38DOOK43o3VBmswMp1TrE=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

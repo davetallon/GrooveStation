@@ -1,4 +1,4 @@
-﻿namespace GrooveStation_HARDWARE
+﻿namespace GrooveStation
 {
     public class Track
     {
@@ -8,3 +8,5 @@
         public string Runtime { get; set; }
     }
 }
+
+// "POCO" (Plain Old CLR Object) class is a simple class that is used to represent data or entities in an application.
