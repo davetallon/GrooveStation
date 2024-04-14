@@ -1,20 +1,26 @@
 # GrooveStation
 
-GrooveStation is a music player application built using C#. It allows users to load and play local music files, navigate through the playlist, control playback, adjust volume, and more.
+GrooveStation is a music player application and data-migration tool built using C#. It allows users to load and play local music files and upload to an external drive via USB if desired.
 
 The GrooveStation application follows the Model-View-Presenter (MVP) architecture pattern. The Presenter layer acts as the intermediary between the Model and View layers, handling user interactions and updating the View based on changes in the Model. This architecture allows for easier testing, modularity, and separation of concerns, making the GrooveStation application more robust and maintainable.
 
 ![ezgif com-animated-gif-maker](https://github.com/davetallon/GrooveStation/assets/68640524/001ea571-baf1-4e62-8a04-e6fc5b881f10)
 
-## Features
+## GrooveStation Features
 
-- Load local music files
 - Create & Display tracklist and runtime
 - Play, pause, and navigate through songs
 - Adjust volume
 - Shuffle playlist
 - Mute/Unmute audio
 - & more
+
+## Data Migration tool Features
+
+- Load local music files
+- Transfer to external USB device
+- Preview tracks pre-transfer
+- Enable test mode
 
 ## Getting Started
 
